@@ -6,7 +6,8 @@ import NoteViewer from '../components/NoteViewer.vue';
 const routes = [
   { path: '/', component: NoteList },
   { path: '/note/:id', component: NoteViewer, props: true },
-  { path: '/create', component: NoteEditor }
+  { path: '/create', component: NoteEditor },
+  { path: '/*', redirect: '/', component: NoteList }
 ];
 
 const router = createRouter({

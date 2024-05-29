@@ -38,7 +38,6 @@
           title: this.title,
           content: this.content,
           createdAt: new Date().toISOString(),
-          updatedAt: new Date().toISOString()
         };
         notes.push(newNote);
         localStorage.setItem('notes', JSON.stringify(notes));

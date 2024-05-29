@@ -4,7 +4,6 @@
       <p class="note-content">{{ note.content }}</p>
       <div class="note-meta">
         <p class="note-date">Créée le : {{ new Date(note.createdAt).toLocaleString() }}</p>
-        <p class="note-date">Dernière mise à jour : {{ new Date(note.updatedAt).toLocaleString() }}</p>
       </div>
     </div>
   </template>
